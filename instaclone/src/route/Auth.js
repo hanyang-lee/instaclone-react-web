@@ -4,9 +4,12 @@ import {getAuth,
     GoogleAuthProvider ,
     signInWithPopup
 } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 
 
 const Auth = () =>{
+    let navigate = useNavigate();
+
     const auth = getAuth();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -20,9 +23,8 @@ const Auth = () =>{
             setPassword(value);
         }
     };
-    const onCreateSubmit = (event) =>{
-        event.preventDefault()
-        
+    function onCreateSubmit() {
+        navigate("/Create");
     }
     const onSignSubmit = (event) => {
         event.preventDefault()
