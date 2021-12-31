@@ -4,9 +4,12 @@ import {getAuth,
     GoogleAuthProvider ,
     signInWithPopup
 } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
+import styles from "./Auth.module.css";
 
 
 const Auth = () =>{
+    let navigate = useNavigate();
     const auth = getAuth();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -20,9 +23,9 @@ const Auth = () =>{
             setPassword(value);
         }
     };
-    const onCreateSubmit = (event) =>{
-        event.preventDefault()
-        
+
+    function onCreateSubmit() {
+        navigate("/Create");
     }
     const onSignSubmit = (event) => {
         event.preventDefault()
@@ -36,29 +39,40 @@ const Auth = () =>{
         const provider = new GoogleAuthProvider ();
         signInWithPopup(auth, provider)
     }
+    
     return(
-        <div>
-            <form onSubmit={onSignSubmit}>
-                <input
-                name="email"
-                type="email"
-                placeholder="Email"
-                required
-                value={email}
-                onChange={onChange}
-                />
-                <input
-                name="password"
-                type="password"
-                placeholder="Password"
-                required
-                value={password}
-                onChange={onChange}
-                />
-                <input type="submit" value="Log in"/>
-            </form>
+        <div className={styles.Logbox}>
+            <div className={styles.Exitcreat}>
+                <form onSubmit={onSignSubmit}>
+                    <div>
+                        <input
+                        name="email"
+                        type="email"
+                        placeholder="Email"
+                        required
+                        value={email}
+                        onChange={onChange}
+                        />
+                    </div>
+                    <div>
+                        <input
+                        name="password"
+                        type="password"
+                        placeholder="Password"
+                        required
+                        value={password}
+                        onChange={onChange}
+                        />
+                    </div>
+                    <input type="submit" value="Log in"/>
+                </form>
+                <div>
+                <button onClick={onGoogleClick}>Continue with Google</button>
+                </div>
+            </div>
+            <div>
             <button onClick={onCreateSubmit}>Create Account</button>
-            <button onClick={onGoogleClick}>Continue with Google</button>
+            </div>
         </div>
     )
 }
