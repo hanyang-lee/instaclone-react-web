@@ -23,7 +23,7 @@ const Auth = () =>{
             setPassword(value);
         }
     };
-
+  
     function onCreateSubmit() {
         navigate("/Create");
     }
