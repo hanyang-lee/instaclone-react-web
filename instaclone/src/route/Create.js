@@ -2,8 +2,10 @@ import React, {useState} from "react";
 import {getAuth,
     createUserWithEmailAndPassword
 } from "firebase/auth"
+import { useNavigate } from "react-router-dom";
 
 const Create = () =>{
+    let navigate = useNavigate();
     const auth = getAuth();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -24,6 +26,7 @@ const Create = () =>{
             email,
             password
         )
+        navigate("/")
     }
     return (
         <div>

@@ -14,7 +14,7 @@ const AppRouter = ({LoggedIn}) => {
             </> :
             <Route exact path="/" element={<Auth/>} />
             }
-            
+            <Route exact path="/Create" element={<Create/>} />
         </Routes>
     </Router>
     )
