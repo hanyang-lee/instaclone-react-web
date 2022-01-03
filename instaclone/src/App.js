@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import AppRouter from "./routes";
 import {getAuth} from "firebase/auth"
 import app from "./firebase"
+import styles from "./App.module.css";
 
 function App() {
   const auth = getAuth()
@@ -20,7 +21,7 @@ function App() {
   return (
     <>
       {init ? <AppRouter LoggedIn={LoggedIn}/> : "initializing..."}
-      <footer>&copy; 2021-{new Date().getFullYear()} instaClone</footer>
+      <footer className={styles.fP0}>&copy; 2021-{new Date().getFullYear()} instaClone</footer>
     </>
   );
 }
