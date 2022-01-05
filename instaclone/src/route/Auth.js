@@ -42,20 +42,18 @@ const Auth = () =>{
     
     //52번째줄 classNames안에 조건문을 이용해서 글이 작성이 되어야 FATdn을 true로 하게끔 바꿔줘야함
     return(
-        <div className={styles.Logbox}>
-            <div className={styles.Exitcreat}>
-                <h1 className={classNames({[styles.NXVPg]: true, [styles.Szr5J]: true, [styles.coreSpriteLoggedOutWordmark]: true})}>Instagram</h1>
-                <div className={styles.Exithead}>
-                    <form className={styles.HmktE} onSubmit={onSignSubmit}>
-                        <div className={classNames({[styles.qF0y9]: true, [styles.Igw0E]: true, [styles.IwRsH]: true, [styles.eGOV_]: true, [styles._4EzTm]: true, [styles.kEKum]: true})}>
+        <div className={styles.LogBox}>
+            <div className={styles.exitCreat}>
+                <h1 className={classNames({[styles.headMg]: true, [styles.headCss]: true, [styles.coreSpriteLoggedOutWordmark]: true})}>Instagram</h1>
+                <div className={styles.exitHead}>
+                    <form className={styles.formCss} onSubmit={onSignSubmit}>
+                        <div className={classNames({[styles.itemsAlign]: true, [styles.topM24]: true})}>
                             <div className={styles.Blankbox}>
                                 <div className={styles.InputBox}>
-                                    <label className={classNames({[styles.f0n8F]:true, [styles.FATdn]: true})}>
-                                        <span className={styles._9nyy2}>전화번호, 사용자 이름 또는 이메일</span>
+                                    <label className={classNames({[styles.labelCss]: true, [styles.moveUp]: true})}>
+                                        <span className={styles.spanCss}>전화번호, 사용자 이름 또는 이메일</span>
                                         <input
-                                        aria-label="전화번호, 사용자 이름 또는 이메일"
-                                        aria-required="true"
-                                        className={classNames({[styles._2hvTZ]: true, [styles.pexuQ]: true,[styles.zyHYP]: true})}
+                                        className={styles.inputCss}
                                         autoCapitalize="off"
                                         autoCorrect="off"
                                         name="email"
@@ -65,15 +63,14 @@ const Auth = () =>{
                                         onChange={onChange}
                                         />
                                     </label>
-                                    <div className={styles.i24fI}></div>
                                 </div>
                             </div>
                             <div className={styles.Blankbox}>
                                 <div className={styles.InputBox}>
-                                    <label className={classNames({[styles.f0n8F]:true, [styles.FATdn]: true})}>
-                                        <span className={styles._9nyy2}>비밀번호</span>
+                                    <label className={classNames({[styles.labelCss]:true, [styles.moveUp]: true})}>
+                                        <span className={styles.spanCss}>비밀번호</span>
                                         <input
-                                        className={classNames({[styles._2hvTZ]: true, [styles.pexuQ]: true,[styles.zyHYP]: true})}
+                                        className={styles.inputCss}
                                         name="password"
                                         type="password"
                                         required
@@ -81,31 +78,30 @@ const Auth = () =>{
                                         onChange={onChange}
                                         />
                                     </label>
-                                    <div className={styles.i24fI}></div>
                                 </div>
                             </div>
-                            <div className={classNames({[styles.qF0y9]: true, [styles.Igw0E]: true, [styles.IwRsH]: true, [styles.eGOV_]: true, [styles._4EzTm]:true, [styles.bKEs3]: true, [styles.CovQj]: true, [styles.jKUp7]: true, [styles.DhRcB]: true})}>
-                                <input className={classNames({[styles.sqdOP]: true, [styles.L3Nky]: true, [styles.y3zKF]: true})} type="submit" value="Log in"/>
+                            <div className={styles.positioning}>
+                                <input className={classNames({[styles.buttonCss]: true, [styles.btnColor]: true})} type="submit" value="Log in"/>
                             </div>
-                            <div className={classNames({[styles.K_1uj]:true, [styles.Z7p_S]: true})}>
-                                <div className={styles.s311c}></div>
-                                <div className={styles._0tv_g}>또는</div>
-                                <div className={styles.s311c}></div>
+                            <div className={styles.linePosi}>
+                                <div className={styles.dotLine}></div>
+                                <div className={styles.letterCss1}>또는</div>
+                                <div className={styles.dotLine}></div>
                             </div>
-                            <div className={classNames({[styles.qF0y9]: true, [styles.Igw0E]: true, [styles.IwRsH]: true, [styles.eGOV_]: true, [styles._4EzTm]:true, [styles.bKEs3]: true, [styles.CovQj]: true, [styles.jKUp7]: true, [styles.DhRcB]: true})}>
-                                <button className={classNames({[styles.sqdOP]: true, [styles.yWX7d]: true, [styles.y3zKF]: true})} onClick={onGoogleClick}>
-                                    <span className={classNames({[styles.coreSpriteFacebookIcon]: true, [styles.AeB99]: true})}></span>
-                                    <span className={styles.KPnG0}>Facebook으로 로그인</span>
+                            <div className={styles.positioning}>
+                                <button className={classNames({[styles.buttonCss]: true, [styles.btnCondition]: true, [styles.btnColor]: true})} onClick={onGoogleClick}>
+                                    <span className={classNames({[styles.coreSpriteFacebookIcon]: true, [styles.picture]: true})}></span>
+                                    <span className={styles.facebookColor}>Facebook으로 로그인</span>
                                 </button>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
-            <div className={styles.gr27e}>
-                <div className={classNames({[styles._7UhW9]: true, [styles.xLCgt]: true, [styles.MMzan]: true, [styles._0PwGv]: true, [styles.uL8Hv]: true})}>
-                    <p className={styles.izU2O}>계정이 없으신가요? 
-                        <button className={classNames({[styles._7UhW9]: true, [styles.xLCgt]: true, [styles.qyrsm]: true, [styles.gtFbE]: true, [styles.se6yk]: true, [styles.Bline]: true})} onClick={onCreateSubmit}>가입하기</button>
+            <div className={styles.signBox}>
+                <div className={styles.signCss1}>
+                    <p className={styles.letterCss2}>계정이 없으신가요?
+                        <button className={styles.signCss2} onClick={onCreateSubmit}>가입하기</button>
                     </p>
                 </div>
             </div>
