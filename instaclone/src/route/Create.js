@@ -1,8 +1,13 @@
 import React, {useState} from "react";
 import {getAuth,
-    createUserWithEmailAndPassword
+    createUserWithEmailAndPassword,
+    GoogleAuthProvider,
+    signInWithPopup
 } from "firebase/auth"
 import { useNavigate } from "react-router-dom";
+import styles from "./Create.module.css";
+import classNames from 'classnames';
+
 
 const Create = () =>{
     let navigate = useNavigate();
@@ -28,28 +33,57 @@ const Create = () =>{
         )
         navigate("/")
     }
+    const onGoogleClick =  (event) =>{
+        const provider = new GoogleAuthProvider ();
+        signInWithPopup(auth, provider)
+        navigate("/")
+    }
+    const onClick =(event) => {
+        event.preventDefault()
+        navigate("/")
+    }
+
     return (
-        <div>
-            <form onSubmit={onNewSubmit}>
-                <input
-                name="email"
-                type="email"
-                placeholder="Email"
-                required
-                value={email}
-                onChange={onChange}
-                />
-                <input
-                name="password"
-                type="password"
-                placeholder="Password"
-                required
-                value={password}
-                onChange={onChange}
-                />
-                <input type="submit" value="Sign in"/>
-            </form>
-        </div>
+        <main className={styles.main}>
+            <div className={styles.mainbox}>
+                <h1 className={classNames({[styles.NXVPg]: true, [styles.Szr5J]: true, [styles.coreSpriteLoggedOutWordmark]: true})}>instgram</h1>
+                <form className={styles.inputbox} onSubmit={onNewSubmit}>
+                    <h2 className={styles.subtitle}>친구들의 사진과 동영상을 보려면 가입하세요.</h2>
+                    <button className={styles.facebutton} onClick={onGoogleClick}>
+                        <span className={classNames({[styles.coreSpriteFacebookIcon]: true, [styles.AeB99]: true})}></span>
+                        <span className={styles.facetitle}>Facebook으로 로그인</span>
+                    </button>
+                    <div className={classNames({[styles.K_1uj]:true, [styles.Z7p_S]: true})}>
+                        <div className={styles.s311c}></div>
+                        <div className={styles._0tv_g}>또는</div>
+                        <div className={styles.s311c}></div>
+                    </div>
+                    <input 
+                    name="email"
+                    type="email"
+                    placeholder="휴대폰 번호 또는 이메일 주소"
+                    required
+                    value={email}
+                    onChange={onChange}
+                    />
+                    <input
+                    name="password"
+                    type="password"
+                    placeholder="비밀번호"
+                    required
+                    value={password}
+                    onChange={onChange}
+                    />
+                    <input type="submit" value="가입"/>
+                </form>
+            </div>
+            <div className={styles.footerbox}>
+                <div className={styles.loginbox}>
+                    <span>계정이 있으신가요?</span>
+                    <button onClick={onClick}>로그인</button>
+                </div>
+             </div>
+    </main>
     )
 }
 

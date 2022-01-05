@@ -1,8 +1,8 @@
 import React from "react";
 import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Auth from "./route/Auth";
 import Home from "./route/Home";
 import Create from "./route/Create"
+import LoginPage from "./route/LoginPage";
 
 const AppRouter = ({LoggedIn}) => {
     return (
@@ -12,9 +12,9 @@ const AppRouter = ({LoggedIn}) => {
             <>
             <Route exact path="/" element={<Home/>} />
             </> :
-            <Route exact path="/" element={<Auth/>} />
+            <Route exact path="/" element={<LoginPage/>} />
             }
-            <Route exact path="/Create" element={<Create/>} />
+            <Route path={"/Create"} element={<Create/>} />
         </Routes>
     </Router>
     )

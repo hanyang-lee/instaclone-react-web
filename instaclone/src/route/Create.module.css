@@ -1,0 +1,275 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: whitesmoke;
+}
+
+.mainbox {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 421px;
+  width: 350px;
+  background-color: white;
+}
+
+.subtitle {
+  font-size: 17px;
+  text-align: center;
+  color: #8e8e8e;
+  margin: 20px 40px;
+}
+
+.inputbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.coreSpriteLoggedOutWordmark {
+  background-repeat: no-repeat;
+  background-position: 0 -130px;
+  height: 51px;
+  width: 175px;
+}
+
+.NXVPg {
+  margin: 22px auto 12px;
+}
+
+.Szr5J {
+  display: block;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-indent: 110%;
+  white-space: nowrap;
+}
+
+.inputbox input {
+  height: 38px;
+  width: 268px;
+  padding: 0;
+  margin: 4px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.inputbox input::placeholder {
+  font-size: 12px;
+  transform: translateY(-10px);
+}
+
+.inputbox input:last-child {
+  background-color: #0095f6;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.facebutton {
+  background-color: #0095f6;
+  height: 38px;
+  width: 268px;
+  padding: 0;
+  margin: 4px 0;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.coreSpriteFacebookIcon,
+.coreSpriteFacebookIconInverted {
+  background-repeat: no-repeat;
+  background-position: -414px -259px;
+  height: 16px;
+  width: 16px;
+}
+
+.AeB99 {
+  display: inline-block;
+  margin-right: 8px;
+  position: relative;
+  top: 3px;
+}
+
+.Z7p_S {
+  margin: 10px 40px 18px;
+}
+
+.K_1uj {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.s311c {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  background-color: #dbdbdb;
+  background-color: rgba(var(--b38, 219, 219, 219), 1);
+  height: 1px;
+  position: relative;
+  top: 0.45em;
+}
+
+._0tv_g {
+  color: #8e8e8e;
+  color: rgba(var(--f52, 142, 142, 142), 1);
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 15px;
+  margin: 0 18px;
+  text-transform: uppercase;
+}
+
+.footerbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 70px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 15px;
+  background-color: white;
+}
+
+.loginbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.loginbox button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  margin-left: 5px;
+  font-weight: 600;
+  color: #0095f6;
+}
+.coreSpriteActivityHeart,
+.coreSpriteAddText,
+.coreSpriteAppIcon,
+.coreSpriteAppStoreButton,
+.coreSpriteBoomerang,
+.coreSpriteCall,
+.coreSpriteCheck,
+.coreSpriteChevronDark,
+.coreSpriteChevronDownGrey,
+.coreSpriteChevronRight,
+.coreSpriteChevronRightBlue,
+.coreSpriteChevronRightBlue-3x,
+.coreSpriteChevronRightBlue-4x,
+.coreSpriteCi,
+.coreSpriteClose,
+.coreSpriteCloseLight,
+.coreSpriteDesktopNavDirect,
+.coreSpriteDesktopPhotoGrid,
+.coreSpriteDesktopPhotoGridActive,
+.coreSpriteDesktopProfileIGTV,
+.coreSpriteDesktopProfileIGTVActive,
+.coreSpriteDesktopProfileSave,
+.coreSpriteDesktopProfileSaveActive,
+.coreSpriteDesktopProfileTagged,
+.coreSpriteDesktopProfileTaggedActive,
+.coreSpriteDirectHeart,
+.coreSpriteDismissLarge,
+.coreSpriteDismissSmall,
+.coreSpriteDownload,
+.coreSpriteDropdownArrowBlue5,
+.coreSpriteDropdownArrowBlue6,
+.coreSpriteDropdownArrowGrey9,
+.coreSpriteDropdownArrowWhite,
+.coreSpriteFacebookIcon,
+.coreSpriteFacebookIconInverted,
+.coreSpriteFeedLikeBig,
+.coreSpriteGallery,
+.coreSpriteGlyphGradient,
+.coreSpriteGlyphWhite,
+.coreSpriteGooglePlayButton,
+.coreSpriteHashtag,
+.coreSpriteHeartSmall,
+.coreSpriteHyperlapse,
+.coreSpriteIgLiteHalfsheetInstagramLogo,
+.coreSpriteInfo,
+.coreSpriteInputAccepted,
+.coreSpriteInputError,
+.coreSpriteInputRefresh,
+.coreSpriteKeyhole,
+.coreSpriteLeftChevron,
+.coreSpriteLeftPaginationArrow,
+.coreSpriteLocation,
+.coreSpriteLocationActive,
+.coreSpriteLock,
+.coreSpriteLockSmall,
+.coreSpriteLoggedOutGenericUpsell,
+.coreSpriteLoggedOutWordmark,
+.coreSpriteMobileNavDirect,
+.coreSpriteMobileNavTypeLogo,
+.coreSpriteNavBack,
+.coreSpriteNotificationLeftChevron,
+.coreSpriteNotificationRightChevron,
+.coreSpriteOptionsEllipsis,
+.coreSpriteOptionsEllipsisLight,
+.coreSpritePagingChevron,
+.coreSpritePlayIconSmall,
+.coreSpritePrivateLock,
+.coreSpriteProfileCamera,
+.coreSpriteReload,
+.coreSpriteRightChevron,
+.coreSpriteRightPaginationArrow,
+.coreSpriteSaveNull,
+.coreSpriteSaveStory,
+.coreSpriteSearchClear,
+.coreSpriteSearchIcon,
+.coreSpriteSensitivityIcon,
+.coreSpriteSensitivityIconSmall,
+.coreSpriteSpeechBubbleSmall,
+.coreSpriteSpinsta,
+.coreSpriteSpinstaNux,
+.coreSpriteSpinstaStory,
+.coreSpriteStar,
+.coreSpriteStoryCreation,
+.coreSpriteStoryCreationAlt,
+.coreSpriteStoryRing,
+.coreSpriteStoryViewCount,
+.coreSpriteTaggedNull,
+.coreSpriteUnreadComments,
+.coreSpriteUnreadLikes,
+.coreSpriteUnreadRelationships,
+.coreSpriteUnreadUsertags,
+.coreSpriteVerifiedBadge,
+.coreSpriteVerifiedBadgeSmall,
+.coreSpriteVideoNux,
+.coreSpriteViewCount,
+.coreSpriteWindowsStoreButton {
+  background-image: url(https://www.instagram.com/static/bundles/es6/sprite_core_32f0a4f27407.png/32f0a4f27407.png);
+}
