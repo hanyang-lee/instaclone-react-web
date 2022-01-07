@@ -9,7 +9,8 @@
 }
 
 .mainbox {
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border: 1px solid #dbdbdb;
+  border: 1px solid rgba(var(--b6a,219,219,219),1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,7 +63,8 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border: 1px solid #dbdbdb;
+  border: 1px solid rgba(var(--b6a,219,219,219),1);
   background-color: #fafafa;
 }
 
@@ -78,6 +80,14 @@
   border-radius: 5px;
 }
 
+.signbutton {
+  cursor: pointer;
+}
+
+.signbutton:hover {
+  opacity: .8;
+}
+
 .facebutton {
   background-color: #0095f6;
   height: 38px;
@@ -91,6 +101,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  cursor: pointer;
 }
 
 .coreSpriteFacebookIcon,
@@ -222,7 +233,8 @@
   justify-content: center;
   width: 350px;
   height: 70px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border: 1px solid #dbdbdb;
+  border: 1px solid rgba(var(--b6a,219,219,219),1);
   margin: 15px;
   background-color: white;
 }

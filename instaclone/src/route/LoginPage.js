@@ -1,13 +1,14 @@
 import React from "react";
 import Auth from "./Auth";
+import styles from "./Create.module.css";
 
 function LoginPage() {
     return (
-        <body>
+        <main className={styles.main}>
             <div>
                 <Auth />
             </div>
-        </body>    
+        </main>
     )
 }
 
