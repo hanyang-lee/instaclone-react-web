@@ -209,7 +209,7 @@
     width: auto;
 }
 
-.buttonCss:hover {
+.buttonCss:active {
     opacity: .8;
 }
 
@@ -339,6 +339,10 @@
     outline: none;
     background-color: #fff;
     cursor: pointer;
+}
+
+.signCss2:active {
+    opacity: .8;
 }
 
 #react-root, div, footer, header, main {

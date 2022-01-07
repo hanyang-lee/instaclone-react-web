@@ -84,7 +84,7 @@
   cursor: pointer;
 }
 
-.signbutton:hover {
+.signbutton:active {
   opacity: .8;
 }
 
@@ -102,6 +102,10 @@
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+}
+
+.facebutton:active {
+  opacity: .8;
 }
 
 .coreSpriteFacebookIcon,
@@ -242,6 +246,10 @@
 .loginbox {
   display: flex;
   flex-direction: row;
+}
+
+.loginbox:active {
+  opacity: .8;
 }
 
 .loginbox button {
