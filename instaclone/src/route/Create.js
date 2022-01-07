@@ -46,35 +46,45 @@ const Create = () =>{
     return (
         <main className={styles.main}>
             <div className={styles.mainbox}>
-                <h1 className={classNames({[styles.NXVPg]: true, [styles.Szr5J]: true, [styles.coreSpriteLoggedOutWordmark]: true})}>instgram</h1>
+                <h1 className={classNames({[styles.headMg]: true, [styles.headCss]: true, [styles.coreSpriteLoggedOutWordmark]: true})}>instgram</h1>
                 <form className={styles.inputbox} onSubmit={onNewSubmit}>
                     <h2 className={styles.subtitle}>친구들의 사진과 동영상을 보려면 가입하세요.</h2>
-                    <button className={styles.facebutton} onClick={onGoogleClick}>
-                        <span className={classNames({[styles.coreSpriteFacebookIcon]: true, [styles.AeB99]: true})}></span>
-                        <span className={styles.facetitle}>Facebook으로 로그인</span>
-                    </button>
-                    <div className={classNames({[styles.K_1uj]:true, [styles.Z7p_S]: true})}>
-                        <div className={styles.s311c}></div>
-                        <div className={styles._0tv_g}>또는</div>
-                        <div className={styles.s311c}></div>
+                    <div>
+                        <button className={styles.facebutton} onClick={onGoogleClick}>
+                            <span className={classNames({[styles.coreSpriteFacebookIcon]: true, [styles.picture]: true})}></span>
+                            <span className={styles.facetitle}>Facebook으로 로그인</span>
+                        </button>
                     </div>
-                    <input 
-                    name="email"
-                    type="email"
-                    placeholder="휴대폰 번호 또는 이메일 주소"
-                    required
-                    value={email}
-                    onChange={onChange}
-                    />
-                    <input
-                    name="password"
-                    type="password"
-                    placeholder="비밀번호"
-                    required
-                    value={password}
-                    onChange={onChange}
-                    />
-                    <input type="submit" value="가입"/>
+                    
+                    <div className={classNames({[styles.linePosi]: true, [styles.itemsAlign]: true})}>
+                        <div className={styles.dotLine}></div>
+                        <div className={styles.letterCss1}>또는</div>
+                        <div className={styles.dotLine}></div>
+                    </div>
+                    <div>
+                        <label className={classNames({[styles.labelCss]:true, [styles.moveUp]: true})}>
+                            <span className={styles.spanCss}>전화번호, 사용자 이름 또는 이메일</span>
+                            <input 
+                            name="email"
+                            type="email"
+                            required
+                            value={email}
+                            onChange={onChange}
+                            />
+                        </label>
+                        <label className={classNames({[styles.labelCss]:true, [styles.moveUp]: true})}>
+                            <span className={styles.spanCss}>비밀번호</span>
+                            <input
+                            name="password"
+                            type="password"
+                            required
+                            value={password}
+                            onChange={onChange}
+                            />
+                        </label>
+                        <input className={styles.signbutton} type="submit" value="가입"/>
+                    </div>
+                    
                 </form>
             </div>
             <div className={styles.footerbox}>
