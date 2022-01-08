@@ -9,7 +9,7 @@
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: 12px;
-    max-width: 350px;
+    width: 350px;
 }
 
 .exitCreat {
@@ -192,17 +192,13 @@
 }
 
 .buttonCss {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
     background: 0 0;
-    border: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     cursor: pointer;
     display: block;
     font-weight: 600;
     padding: 5px 9px;
+    border-radius: 5px;
+    color:white;
     text-align: center;
     text-transform: inherit;
     text-overflow: ellipsis;
@@ -213,7 +209,7 @@
     width: auto;
 }
 
-.buttonCss:hover {
+.buttonCss:active {
     opacity: .8;
 }
 
@@ -342,6 +338,11 @@
     border: none;
     outline: none;
     background-color: #fff;
+    cursor: pointer;
+}
+
+.signCss2:active {
+    opacity: .8;
 }
 
 #react-root, div, footer, header, main {
