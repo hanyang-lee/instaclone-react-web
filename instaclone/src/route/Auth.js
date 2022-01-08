@@ -50,7 +50,7 @@ const Auth = () =>{
                         <div className={classNames({[styles.itemsAlign]: true, [styles.topM24]: true})}>
                             <div className={styles.Blankbox}>
                                 <div className={styles.InputBox}>
-                                    <label className={classNames({[styles.labelCss]: true, [styles.moveUp]: true})}>
+                                    <label className={classNames({[styles.labelCss]: true, [styles.moveUp]: email?true:false})}>
                                         <span className={styles.spanCss}>전화번호, 사용자 이름 또는 이메일</span>
                                         <input
                                         className={styles.inputCss}
@@ -67,7 +67,7 @@ const Auth = () =>{
                             </div>
                             <div className={styles.Blankbox}>
                                 <div className={styles.InputBox}>
-                                    <label className={classNames({[styles.labelCss]:true, [styles.moveUp]: true})}>
+                                    <label className={classNames({[styles.labelCss]:true, [styles.moveUp]: password?true:false})}>
                                         <span className={styles.spanCss}>비밀번호</span>
                                         <input
                                         className={styles.inputCss}

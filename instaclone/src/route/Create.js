@@ -62,7 +62,7 @@ const Create = () =>{
                         <div className={styles.dotLine}></div>
                     </div>
                     <div>
-                        <label className={classNames({[styles.labelCss]:true, [styles.moveUp]: true})}>
+                        <label className={classNames({[styles.labelCss]:true, [styles.moveUp]: email?true:false})}>
                             <span className={styles.spanCss}>전화번호, 사용자 이름 또는 이메일</span>
                             <input 
                             name="email"
@@ -72,7 +72,7 @@ const Create = () =>{
                             onChange={onChange}
                             />
                         </label>
-                        <label className={classNames({[styles.labelCss]:true, [styles.moveUp]: true})}>
+                        <label className={classNames({[styles.labelCss]:true, [styles.moveUp]: password?true:false})}>
                             <span className={styles.spanCss}>비밀번호</span>
                             <input
                             name="password"
