@@ -10,7 +10,7 @@
 
 .mainbox {
   border: 1px solid #dbdbdb;
-  border: 1px solid rgba(var(--b6a,219,219,219),1);
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,37 +55,37 @@
 }
 
 .inputbox input {
-  height: 38px;
-  width: 268px;
-  padding: 0;
+  height: 34px;
+  width: 260px;
+  padding: 3px 0 1px 8px;
   margin: 4px 0;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   border: 1px solid #dbdbdb;
-  border: 1px solid rgba(var(--b6a,219,219,219),1);
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
   background-color: #fafafa;
+  font-size: 15px;
+  border-radius: 5px;
 }
 
-.inputbox input::placeholder {
-  font-size: 12px;
-  transform: translateY(-10px);
+.inputbox input:focus {
+  outline: none;
 }
 
 .inputbox .signbutton {
+  width: 270px;
+  height: 38px;
   background-color: #0095f6;
   border: none;
   color: white;
   border-radius: 5px;
-}
-
-.signbutton {
   cursor: pointer;
 }
 
 .signbutton:active {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .facebutton {
@@ -105,13 +105,13 @@
 }
 
 .facebutton:active {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .coreSpriteFacebookIcon,
 .coreSpriteFacebookIconInverted {
   background-repeat: no-repeat;
-  background-position: -414px -259px;
+  background-position: -414px -300px;
   height: 16px;
   width: 16px;
 }
@@ -199,8 +199,8 @@
 }
 
 .moveUp .spanCss {
-  -webkit-transform: scale(0.83333) translateY(-10px);
-  transform: scale(0.83333) translateY(-10px);
+  -webkit-transform: scale(0.83333) translateY(-13px);
+  transform: scale(0.83333) translateY(-13px);
 }
 
 .spanCss {
@@ -238,7 +238,7 @@
   width: 350px;
   height: 70px;
   border: 1px solid #dbdbdb;
-  border: 1px solid rgba(var(--b6a,219,219,219),1);
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
   margin: 15px;
   background-color: white;
 }
@@ -249,7 +249,7 @@
 }
 
 .loginbox:active {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .loginbox button {
